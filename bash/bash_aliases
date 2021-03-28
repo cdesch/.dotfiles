@@ -1,0 +1,61 @@
+# Bash Aliases
+
+alias untar='tar -zxvf '
+alias getpass="openssl rand -base64 20"
+alias sha='shasum -a 256 '
+alias ping='ping -c 5'
+# Get Local IP Address
+alias ipi='ipconfig getifaddr en0'
+
+## Colorize the ls output ##
+#alias ls='ls --color=auto'
+
+## Use a long listing format ##
+alias ll='ls -la'
+# Sort by file size
+#alias lt='ls --human-readable --size -1 -S --classify'
+# For Mac
+alias lt='du -sh * | sort -h'
+
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+## Shortcuts
+alias c='clear'
+alias ..='cd ..'
+alias h='history'
+alias j='jobs -l'
+alias gh='history|grep'
+# Sort by modification time
+alias left='ls -t -1'
+# Count the files, ignoring directories but not the contents
+alias count='find . -type f | wc -l'
+# cp with progress bar
+alias cpv='rsync -ah --info=progress2'
+# Move to trash
+alias tcn='mv --force -t ~/.Trash '
+
+
+
+# Time/Date
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+# Safety Nets
+
+# do not delete / or prompt if deleting more than 3 files at a time #
+alias rm='rm -I --preserve-root'
+ 
+# confirmation #
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+ 
+# Parenting changing perms on / #
+#alias chown='chown --preserve-root'
+#alias chmod='chmod --preserve-root'
+#alias chgrp='chgrp --preserve-root'
