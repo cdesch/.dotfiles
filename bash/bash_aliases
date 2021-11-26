@@ -42,7 +42,7 @@ alias count='find . -type f | wc -l'
 
 ## Git Aliases
 alias gp='git push origin master'
-alias gpt='git push origin master tags'
+alias gpt='git push origin master --tags'
 
 
 
