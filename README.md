@@ -27,9 +27,15 @@ Link zsh aliases from dotfiles
 
 ### ZSH Commands
 
+[Cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
+
 Reload Shell
 
     source ~/.zshrc
+
+Apply changes made to zshrc
+
+    exec zsh
 
 ### Common Commands/Aliases
 
