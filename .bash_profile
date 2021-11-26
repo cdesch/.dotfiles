@@ -13,6 +13,8 @@ eval "$(rbenv init -)"
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Rust Setup
 source "$HOME/.cargo/env"
 
 # GO Lang Config

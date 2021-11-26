@@ -1,1 +1,1 @@
-echo "... loading .zprofile"
+echo "-> loading .dotfiles/zsh/.zprofile"
